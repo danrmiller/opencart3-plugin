@@ -1,20 +1,21 @@
 {
-    "name": "bitpay/opencart-plugin",
-    "description": "BitPay Payment Method for OpenCart",
+    "name": "bitpay/opencart3-plugin",
+    "description": "GloBee Payment Method for OpenCart",
     "version": "3.0.2",
     "type": "opencart-extension",
-    "keywords": ["bitcoin", "bitpay", "opencart", "payment", "btc", "xbt"],
-    "homepage": "https://github.com/bitpay/opencart-plugin",
+    "keywords": ["bitcoin", "globee", "opencart", "payment", "btc", "xbt"],
+    "homepage": "https://github.com/GloBee-Official/opencart3-plugin",
     "license": "MIT",
     "authors": [
         {
-            "name": "BitPay, Inc.",
-            "homepage": "https://bitpay.com"
+            "name": "GloBee",
+            "homepage": "https://globee.com",
+            "role": "Forked from https://github.com/bitpay/opencart3-plugin"
         }
     ],
     "support": {
-            "email": "support@bitpay.com",
-            "issues": "https://github.com/bitpay/opencart-plugin/issues"
+            "email": "support@globee.com",
+            "issues": "https://support.globee.com"
         },
     "repositories": [
         {
@@ -32,11 +33,15 @@
                     "reference": "7911c76c43e29ddc1e4168f36dff6a0be6179719"
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/GloBee-Official/php-bitpay-client.git"
         }
     ],
     "require": {
         "php" : ">=5.4.0",
-        "bitpay/php-client": "~2.2"
+        "paybee/php-client": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit" : "4.*",

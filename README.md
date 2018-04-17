@@ -2,18 +2,17 @@
 
 This is a Community-supported project.
 
-If you are interested in becoming a maintainer of this project, please contact us at support@bitpay.com. Developers at BitPay will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
+If you are interested in becoming a maintainer of this project, please contact us at support@globee.com. Developers at Globee will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
 
-# BitPay for OpenCart
+# GloBee for OpenCart
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/bitpay/opencart-plugin/master.svg?style=flat-square)](https://travis-ci.org/bitpay/opencart-plugin)
 
 ## Last OpenCart Version Tested: 3.0.2.0 (not compatible with v2 branch)
 
 ## Installation
 
-Follow the instructions found in the [BitPay for OpenCart Guide](GUIDE.md)
+Follow the instructions found in the [GloBee for OpenCart Guide](GUIDE.md)
 
 ## Server requirements
 PHP > 5.5 or PHP > 7.0, with the following PHP plugins enabled:
@@ -27,7 +26,7 @@ PHP > 5.5 or PHP > 7.0, with the following PHP plugins enabled:
 
 ``` bash
 # Clone the repo
-$ git clone https://github.com/bitpay/opencart3-plugin.git
+$ git clone https://github.com/GloBee-Official/opencart3-plugin.git
 $ cd ./opencart3-plugin
 
 # Install dependencies via Composer
@@ -62,8 +61,8 @@ $ ./bin/robo test
 $ ./bin/robo build
 
 # Outputs:
-# ./build/bitpay-opencart - the distribution files
-# ./build/bitpay-opencart.ocmod.zip - the distribution archive
+# ./build/globee-opencart - the distribution files
+# ./build/globee-opencart.ocmod.zip - the distribution archive
 ```
 
 ## Contributing
@@ -72,11 +71,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Support
 
-**BitPay Support:**
+**GloBee Support:**
 
 * Last OpenCart Version Tested: 3.2.0.2 (not compatible with v2 branch)
-* [Support](https://support.bitpay.com/hc/en-us/articles/115003000543-How-do-I-accept-bitcoin-with-Opencart-)
-  * BitPay merchant support documentation
+* [Support](https://globee.com/docs)
+  * GloBee merchant support documentation
 
 **OpenCart Support:**
 

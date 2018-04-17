@@ -312,14 +312,14 @@ class Bitpay {
 	}
 
 	/**
-	 * Sends a support request to BitPay.
+	 * Sends a support request to GloBee.
 	 * @return void
 	 */
 	public function sendSupportRequest() {
 
 		$mail = new Mail();
 
-		$mail->setTo('support@bitpay.com');
+		$mail->setTo('support@globee.com');
 		$mail->setFrom($this->request->post['request_email_address']);
 		$mail->setSender($this->request->post['request_name']);
 		$mail->setSubject($this->request->post['request_subject']);

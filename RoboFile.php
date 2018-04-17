@@ -58,13 +58,13 @@ class RoboFile extends \Robo\Tasks
              ->commit('Clean install')
              ->run();
         $this->taskFileSystemStack()
-             ->mirror('vendor/bitpay/php-client/src/Bitpay', 'www/system/library/Bitpay')
+             ->mirror('vendor/paybee/php-client/src/Bitpay', 'www/system/library/Bitpay')
              ->run();
         $this->taskGitStack()
              ->stopOnFail()
              ->dir('www')
              ->add('-A')
-             ->commit('Added bitpay/php-client library')
+             ->commit('Added paybee/php-client library')
              ->run();
 
     }
@@ -138,12 +138,12 @@ class RoboFile extends \Robo\Tasks
     public function build()
     {
         $this->taskDeleteDir('build')->run();
-        $this->taskFileSystemStack()->mirror('src', 'build/bitpay-opencart')->run();
-        $this->taskFileSystemStack()->mirror('vendor/bitpay/php-client/src/Bitpay', 'build/bitpay-opencart/upload/system/library/Bitpay')->run();
-        $this->taskReplaceInFile('build/bitpay-opencart/upload/system/library/bitpay.php')
+        $this->taskFileSystemStack()->mirror('src', 'build/globee-opencart3')->run();
+        $this->taskFileSystemStack()->mirror('vendor/paybee/php-client/src/Bitpay', 'build/globee-opencart3/upload/system/library/Bitpay')->run();
+        $this->taskReplaceInFile('build/globee-opencart3/upload/system/library/bitpay.php')
              ->from('{{bitpay_lib_version}}')
-             ->to($this->depver('bitpay/php-client'))
+             ->to($this->depver('paybee/php-client'))
              ->run();
-        $this->taskExec('zip')->dir('build/bitpay-opencart')->arg('-r')->arg('../bitpay-opencart.ocmod.zip')->arg('./')->run();
+        $this->taskExec('zip')->dir('build/globee-opencart3')->arg('-r')->arg('../globee-opencart3.ocmod.zip')->arg('./')->run();
     }
 }

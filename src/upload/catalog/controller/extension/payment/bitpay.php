@@ -270,9 +270,9 @@ class ControllerExtensionPaymentBitpay extends Controller {
 		// Try to set the network based on the url first since the merchant may have
 		// switched networks while test invoices are still being confirmed
 		$network = null;
-		if (true === strpos($json['url'], 'https://test.bitpay.com')) {
+		if (true === strpos($json['url'], 'https://test.globee.com')) {
 			$network = 'testnet';
-		} elseif (true === strpos($json['url'], 'https://bitpay.com')) {
+		} elseif (true === strpos($json['url'], 'https://globee.com')) {
 			$network = 'livenet';
 		}
 		$this->log('info', 'Fetching status of invoice '.$json['id']);
